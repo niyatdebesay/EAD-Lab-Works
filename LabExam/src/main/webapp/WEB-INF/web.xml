@@ -1,0 +1,58 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+     <servlet>
+    <servlet-name>springDispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/applicationContextxml.xml</param-value> <!-- Reference to Spring configuration file -->
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+  	<servlet-name>BookRegister</servlet-name>
+  	<display-name>BookRegister</display-name>
+  	<description></description>
+  	<servlet-class>com.itsc.LabExam.BookRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DisplayBooks</servlet-name>
+  	<display-name>DisplayBooks</display-name>
+  	<description></description>
+  	<servlet-class>com.itsc.LabExam.DisplayBooks</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteBook</servlet-name>
+  	<display-name>DeleteBook</display-name>
+  	<description></description>
+  	<servlet-class>com.itsc.LabExam.DeleteBook</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SearchBook</servlet-name>
+  	<display-name>SearchBook</display-name>
+  	<description></description>
+  	<servlet-class>com.itsc.LabExam.SearchBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BookRegister</servlet-name>
+  	<url-pattern>/bookRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayBook</servlet-name>
+  	<url-pattern>/displayBook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteBook</servlet-name>
+  	<url-pattern>deleteBook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SearchBookt</servlet-name>
+  	<url-pattern>/searchBook</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+
