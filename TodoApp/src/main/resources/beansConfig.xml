@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <!-- Bean definition for DBConnectionManager -->
+    <bean id="dbConnection" class="com.example.TodoApp.DBConnectionManager" />
+
+    <!-- Bean definition for DisplayTask -->
+    <bean id="DisplayTask" class="com.example.TodoApp.DisplayTask">
+        <property name="dbConnection" ref="dbConnection" />
+    </bean>
+
+</beans>

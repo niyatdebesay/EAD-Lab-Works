@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Todo App</title>
+</head>
+<body>
+<form action = "register" method = "post">
+<label>Task Description</label>
+<input type = "text" name = "description"><br/>
+<label>Task Status</label><br>
+        <!-- Single radio button for task status -->
+        <input type="radio" id="pending" name="status" value="pending" required>
+        <label for="pending">Pending</label><br>
+
+        <input type="radio" id="completed" name="status" value="completed" required>
+        <label for="completed">Completed</label><br><br>
+<input type = "date" name = "date" ><br/>
+<input type = 'submit' name= "submit">
+<input type = "reset" name = "Cancel">
+
+</form>
+
+</body>
+</html>
