@@ -1,0 +1,202 @@
+/* General styling */
+body {
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Signup container */
+.signup-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.card-body {
+    padding: 2.5rem !important;
+}
+
+/* Salon heading */
+h1 {
+    color: #e91e63;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Welcome text */
+p {
+    color: #6d4c41;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Input fields */
+.input-container {
+    display: flex;
+    flex-direction: column; /* Change direction to stack label above the input */
+    align-items: flex-start; /* Align label and input to the left */
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e0b0a2;
+    width: 100%;
+}
+
+.input-container input,
+.input-container select {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.input-container select {
+    background-color: white;
+    color: #6d4c41;
+    cursor: pointer;
+}
+
+.input-container svg {
+    width: 20px;
+    height: 20px;
+    color: #b5a9a1;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    color: #6d4c41;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.form-control, .form-select {
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #e91e63;
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25);
+}
+
+.form-text {
+    color: #888;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Signup button */
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #a64241;
+}
+
+.btn-primary {
+    background-color: #e91e63;
+    border: none;
+    padding: 0.75rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #d81b60;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+}
+
+/* Signup link */
+.signup {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #c85554;
+}
+
+.signup a {
+    color: #a64241;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #e91e63;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #d81b60;
+    text-decoration: underline;
+}
+
+.alert-danger {
+    border-radius: 10px;
+    background-color: #ffebee;
+    border-color: #ffcdd2;
+    color: #c62828;
+}
+
+/* Add some animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem !important;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}

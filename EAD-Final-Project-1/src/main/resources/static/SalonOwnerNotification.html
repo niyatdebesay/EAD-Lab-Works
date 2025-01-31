@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Authorization Notification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet"> <!-- Hair salon font -->
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f9f7f1; /* Light beige background */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-top: 8px solid #f3e2a9; /* Soft yellow accent */
+        }
+        .header {
+            background-color: #f3e2a9; /* Soft yellow header */
+            color: #5d4f3e;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-family: 'Pacifico', cursive; /* Hair salon font */
+            font-weight: bold;
+            border-radius: 15px 15px 0 0;
+        }
+        .content {
+            padding: 25px;
+            text-align: left;
+            font-size: 18px;
+            color: #5a5a5a;
+        }
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            color: #f3e2a9; /* Highlight color for emphasis */
+            font-weight: bold;
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #c7c7c7;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #f3e2a9; /* Soft yellow button */
+            text-decoration: none;
+            border-radius: 25px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e2cc8c; /* Slightly darker yellow on hover */
+        }
+        .btn:focus {
+            outline: none;
+        }
+        .footer a {
+            color: #f3e2a9; /* Soft yellow for footer link */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #e2cc8c; /* Slightly darker yellow for hover */
+        }
+        .logo {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        Salon Authorization Approved! 💇‍♀️
+    </div>
+    <div class="content">
+        <p>Dear <strong class="highlight">{{name}}</strong>,</p>
+        <p>We are thrilled to inform you that your salon, <strong class="highlight">{{SalonName}}</strong>, has been successfully authorized!</p>
+        <p>Now, you can start managing your salon, adding services, and booking appointments easily through our platform.</p>
+        <p>Click the button below to access your salon dashboard and begin your journey of styling your business:</p>
+        <p style="text-align: center;">
+            <a href="https://your-salon-platform.com/dashboard" class="btn">Go to Dashboard</a>
+        </p>
+        <p>If you have any questions or need assistance, feel free to contact our support team. We're here to help you with every step of your salon journey! 💅</p>
+        <p>Warm regards,<br>Salon Management Team</p>
+    </div>
+    <div class="footer">
+
+        <span>&copy; 2025 Salon Management. All rights reserved.<br>
+        <a href="mailto:support@salonmanagement.com">Contact Support</a></span>
+    </div>
+</div>
+</body>
+</html>

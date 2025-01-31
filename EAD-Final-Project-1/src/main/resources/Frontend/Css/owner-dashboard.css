@@ -1,0 +1,184 @@
+/* General styling */
+body {
+background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+min-height: 100vh;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+background-color: rgba(255, 255, 255, 0.95) !important;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+color: #e91e63 !important;
+font-weight: 600;
+font-size: 1.5rem;
+}
+
+.nav-link {
+color: #666 !important;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+color: #e91e63 !important;
+}
+
+/* Welcome section */
+.welcome-section {
+text-align: center;
+padding: 2rem 0;
+}
+
+.welcome-section h1 {
+color: #e91e63;
+font-weight: 600;
+margin-bottom: 1rem;
+}
+
+.welcome-section p {
+color: #666;
+font-size: 1.1rem;
+}
+
+/* Salon status card */
+.salon-status-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: 15px;
+border: none;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.salon-status-card .card-title {
+color: #e91e63;
+font-weight: 600;
+margin-bottom: 1rem;
+}
+
+.status-pending {
+color: #ff9800;
+font-weight: 500;
+}
+
+.status-approved {
+color: #4caf50;
+font-weight: 500;
+}
+
+.status-rejected {
+color: #f44336;
+font-weight: 500;
+}
+
+/* Form styling */
+.card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: 15px;
+border: none;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+margin-bottom: 2rem;
+}
+
+.section-title {
+color: #e91e63;
+font-weight: 600;
+margin-bottom: 1.5rem;
+text-align: center;
+}
+
+.form-label {
+color: #666;
+font-weight: 500;
+margin-bottom: 0.5rem;
+}
+
+.form-control {
+border-radius: 8px;
+border: 2px solid #f8bbd0;
+padding: 0.75rem;
+transition: all 0.3s ease;
+}
+
+.form-control:focus {
+border-color: #e91e63;
+box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25);
+}
+
+/* Button styling */
+.btn-primary {
+background-color: #e91e63;
+border: none;
+padding: 0.75rem 1.5rem;
+border-radius: 25px;
+font-weight: 500;
+transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+background-color: #d81b60;
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(233, 30, 99, 0.3);
+}
+
+/* Services list styling */
+.service-item {
+background: rgba(255, 255, 255, 0.8);
+border-radius: 10px;
+padding: 1rem;
+margin-bottom: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.service-info h5 {
+color: #e91e63;
+margin-bottom: 0.5rem;
+}
+
+.service-price {
+color: #d81b60;
+font-weight: 600;
+}
+
+.service-duration {
+color: #666;
+font-size: 0.9rem;
+}
+
+/* Modal styling */
+.modal-content {
+border-radius: 15px;
+border: none;
+}
+
+.modal-header {
+background-color: #e91e63;
+color: white;
+border-radius: 15px 15px 0 0;
+}
+
+.modal-title {
+font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.welcome-section {
+padding: 1rem 0;
+}
+
+.welcome-section h1 {
+font-size: 1.75rem;
+}
+
+.card {
+margin-bottom: 1rem;
+}
+
+.btn-primary {
+width: 100%;
+}
+}
